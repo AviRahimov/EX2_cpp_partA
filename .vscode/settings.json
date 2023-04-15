@@ -3,6 +3,9 @@
         "*.tcc": "cpp",
         "memory_resource": "cpp",
         "sstream": "cpp",
-        "type_traits": "cpp"
+        "type_traits": "cpp",
+        "chrono": "cpp",
+        "string": "cpp",
+        "ostream": "cpp"
     }
 }
