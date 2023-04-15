@@ -11,7 +11,7 @@ namespace ariel{
         // constructor
         Fraction(int m, int n);
         // copy constructor
-        Fraction(Fraction& other);
+        Fraction(const Fraction& other);
         // destructor
         ~Fraction();
         // binary operators
