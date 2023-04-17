@@ -1,32 +1,25 @@
 #include "Fraction.hpp"
 using namespace ariel;
 
-Fraction::Fraction(int m, int n) : mone(m), mechane(n){
-
-}
-
-Fraction::Fraction(const Fraction& other){
-
-}
-Fraction::~Fraction(){
+Fraction::Fraction(int numerator, int denominator) : mone(numerator), mechane(denominator){
 
 }
 
 // binary operators
 Fraction Fraction::operator+ (Fraction& other) const{
-    return Fraction(0, 0);
+    return Fraction(0, 1);
 }
 
 Fraction Fraction::operator- (Fraction& other) const{
-    return Fraction(0, 0);
+    return Fraction(0, 1);
 }
 
 Fraction Fraction::operator* (Fraction& other) const{
-    return Fraction(0, 0);
+    return Fraction(0, 1);
 }
 
 Fraction Fraction::operator/ (Fraction& other) const{
-    return Fraction(0, 0);
+    return Fraction(0, 1);
 }
 
 // comparison operators
@@ -46,17 +39,13 @@ bool Fraction::operator<= (Fraction& other) const{
     return true;
 }
 
-Fraction& Fraction::operator=(const Fraction& other){
-    return *this;
-}
-
 // increment and decrement operators
 Fraction& Fraction::operator++(){
     return *this;
 }
 
 const Fraction Fraction::operator++(int dummy_flag_for_postfix_increment){
-    return Fraction(0, 0);
+    return Fraction(0, 1);
 }
 
 Fraction& Fraction::operator--(){
@@ -64,7 +53,7 @@ Fraction& Fraction::operator--(){
 }
 
 const Fraction Fraction::operator--(int dummy_flag_for_postfix_decrement){
-    return Fraction(0, 0);
+    return Fraction(0, 1);
 }
 
 // friend global comparison operators
@@ -106,35 +95,35 @@ bool ariel::operator== (const Fraction& f1, const Fraction& f2){
 }
 
 Fraction ariel::operator+ (float f1, const Fraction& f2){
-    return Fraction(0, 0);
+    return Fraction(0, 1);
 }
 
 Fraction ariel::operator- (float f1, const Fraction& f2){
-    return Fraction(0, 0);
+    return Fraction(0, 1);
 }
 
 Fraction ariel::operator* (float f1, const Fraction& f2){
-    return Fraction(0, 0);
+    return Fraction(0, 1);
 }
 
 Fraction ariel::operator/ (float f1, const Fraction& f2){
-    return Fraction(0, 0);
+    return Fraction(0, 1);
 }
 
 Fraction ariel::operator+ (const Fraction& f2, float f1){
-    return Fraction(0, 0);
+    return Fraction(0, 1);
 }
 
 Fraction ariel::operator- (const Fraction& f2, float f1){
-    return Fraction(0, 0);
+    return Fraction(0, 1);
 }
 
 Fraction ariel::operator* (const Fraction& f2, float f1){
-    return Fraction(0, 0);
+    return Fraction(0, 1);
 }
 
 Fraction ariel::operator/ (const Fraction& f2, float f1){
-    return Fraction(0, 0);
+    return Fraction(0, 1);
 }
 
 // friend global IO operators

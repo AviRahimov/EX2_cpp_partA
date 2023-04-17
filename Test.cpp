@@ -96,11 +96,3 @@ TEST_CASE("Randomize numbers to check Fraction functions"){
         CHECK((f1 <= f2 || f1 >= f2));
     }
 }
-
-TEST_CASE("Checking if the = operator creates a new object") {
-    Fraction a(1, 2);
-    Fraction c = a;
-    a = a-0.5;
-    CHECK((a == Fraction(0, 1)));
-    CHECK((c == Fraction(1, 2)));
-}

@@ -9,11 +9,8 @@ namespace ariel{
         int mone, mechane;
         public:
         // constructor
-        Fraction(int m, int n);
-        // copy constructor
-        Fraction(const Fraction& other);
-        // destructor
-        ~Fraction();
+        Fraction(int numerator, int denominator);
+    
         // binary operators
         Fraction operator+ (Fraction& other) const;
         Fraction operator- (Fraction& other) const;
@@ -27,28 +24,26 @@ namespace ariel{
         const Fraction operator++(int dummy_flag_for_postfix_increment);
         Fraction& operator--();
         const Fraction operator--(int dummy_flag_for_postfix_decrement);
-        Fraction& operator=(const Fraction& other);
-        // friend global binary operators
-        friend bool operator== (const Fraction& f1, const Fraction& f2);
-        friend Fraction operator+ (float f1, const Fraction& f2);
-        friend Fraction operator- (float f1, const Fraction& f2);
-        friend Fraction operator* (float f1, const Fraction& f2);
-        friend Fraction operator/ (float f1, const Fraction& f2);
-        friend Fraction operator+ (const Fraction& f2, float f1);
-        friend Fraction operator- (const Fraction& f2, float f1);
-        friend Fraction operator* (const Fraction& f2, float f1);
-        friend Fraction operator/ (const Fraction& f2, float f1);
-        friend bool operator> (float f1, const Fraction& f2);
-        friend bool operator< (float f1, const Fraction& f2);
-        friend bool operator>= (float f1, const Fraction& f2);
-        friend bool operator<= (float f1, const Fraction& f2);
-        friend bool operator> (const Fraction& f2, float f1);
-        friend bool operator< (const Fraction& f2, float f1);
-        friend bool operator>= (const Fraction& f2, float f1);
-        friend bool operator<= (const Fraction& f2, float f1);
+        friend bool operator== (const Fraction& frac1, const Fraction& frac2);
+        friend Fraction operator+ (float frac1, const Fraction& frac2);
+        friend Fraction operator- (float frac1, const Fraction& frac2);
+        friend Fraction operator* (float frac1, const Fraction& frac2);
+        friend Fraction operator/ (float frac1, const Fraction& frac2);
+        friend Fraction operator+ (const Fraction& frac2, float frac1);
+        friend Fraction operator- (const Fraction& frac2, float frac1);
+        friend Fraction operator* (const Fraction& frac2, float frac1);
+        friend Fraction operator/ (const Fraction& frac2, float frac1);
+        friend bool operator> (float frac1, const Fraction& frac2);
+        friend bool operator< (float frac1, const Fraction& frac2);
+        friend bool operator>= (float frac1, const Fraction& frac2);
+        friend bool operator<= (float frac1, const Fraction& frac2);
+        friend bool operator> (const Fraction& frac2, float frac1);
+        friend bool operator< (const Fraction& frac2, float frac1);
+        friend bool operator>= (const Fraction& frac2, float frac1);
+        friend bool operator<= (const Fraction& frac2, float frac1);
         // friend global IO operators
-        friend std::ostream& operator<< (std::ostream& output, const Fraction& f);
-        friend std::istream& operator>> (std::istream& input, const Fraction& f);
+        friend std::ostream& operator<< (std::ostream& output, const Fraction& frac);
+        friend std::istream& operator>> (std::istream& input, const Fraction& frac);
     }; // end of Fraction class
 }
 
