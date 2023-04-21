@@ -8,9 +8,15 @@ namespace ariel{
         private:
         int mone, mechane;
         public:
-        // constructor
+        // initializer constructor
         Fraction(int numerator, int denominator);
-    
+        // Constructor for float to fraction
+        Fraction(float num);
+        // getters to the members
+        int getMone() const;
+        int getMechane() const;
+        // Auxiliary function
+        friend float FractionToFloat(const Fraction& a);
         // binary operators
         Fraction operator+ (Fraction& other) const;
         Fraction operator- (Fraction& other) const;
